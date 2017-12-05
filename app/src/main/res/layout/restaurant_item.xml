@@ -4,13 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <ImageView android:id="@+id/restaurant_thumbnail"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/restaurant_thumbnail"
         android:layout_weight="1"/>
 
-    <RelativeLayout android:layout_width="match_parent"
+    <LinearLayout android:layout_width="match_parent"
+        android:orientation="vertical"
         android:layout_height="wrap_content"
         android:layout_weight="2"
         android:layout_gravity="center"
@@ -23,10 +24,14 @@
             android:textStyle="bold"
             android:textSize="18sp"/>
 
+        <ImageView android:id="@+id/restaurant_rating"
+            android:layout_width="100dp"
+            android:layout_height="25dp"/>
+
+
         <TextView android:id="@+id/restaurant_address"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/restaurant_name"
             android:textSize="13sp"/>
 
         <TextView android:id="@+id/restaurant_type"
@@ -34,5 +39,5 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/restaurant_address"
             android:textSize="13sp"/>
-    </RelativeLayout>
+    </LinearLayout>
 </LinearLayout>

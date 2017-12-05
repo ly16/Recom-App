@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+
+    <ImageView android:id="@+id/restaurant_backend_image"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/restaurant_thumbnail"/>
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@+id/restaurant_backend_image"
+        android:layout_gravity="center_vertical">
+
+        <TextView android:id="@+id/restaurant_backend_name"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+        <TextView android:id="@+id/restaurant_backend_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:isIndicator="true"
+            android:id="@+id/restaurant_backend_ratingbar"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:paddingTop="20dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingRight="10dp"
+        android:layout_toLeftOf="@+id/restaurant_backend_favorate">
+
+        <TextView android:id="@+id/restaurant_backend_street"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="right"/>
+        <TextView android:id="@+id/restaurant_backend_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"/>
+        <TextView android:id="@+id/restaurant_backend_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            />
+    </LinearLayout>
+    <ImageView android:id="@+id/restaurant_backend_favorate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src ="@mipmap/ic_favorite_border_black_24dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#FFFFFF"
+        />
+
+</RelativeLayout>
+
